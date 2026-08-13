@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body>
-    <h1></h1>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>JavaScript Clock</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
 </head>
 <body>
-
-    <!-- Clock Display Container -->
-    <div id="clock-container">00:00:00 AM</div>
-
-    <script src="script.js"></script>
+    <h1>Welcome to the Home Page!</h1>
+    <h3>This is very bare bones.</h3>
+    <button id="helloButton">Click Me!</button>
+    <h2 class="colorful">This is colorful from CSS!</h2>
+    <script>
+        const button = document.getElementById("helloButton");
+        button.addEventListener("click", function() {
+            alert("This was made using JavaScript!");
+        });
+    </script>
+    
+    <style>
+        .colorful {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
 </body>
 </html>
