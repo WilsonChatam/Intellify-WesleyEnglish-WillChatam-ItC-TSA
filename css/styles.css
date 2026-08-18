@@ -2,3 +2,34 @@
     color: blue;
     font-weight: bold;
 }
+
+h1.title {
+    color: black;
+    font-size: 3rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.topNav {
+    background-color: lightgray;
+    width: 100vmax;
+    height: 50px;
+    display: inline-block;
+}
+
+div a {
+    color: black;
+    height: auto;
+    width: auto;
+    font-size: 15px;
+}
+div a:hover {
+    color: blue;
+    font-size: 20px;
+}
+
+div button {
+    color: blue;
+    font-size: 15px;
+    height: 50px;
+    width: 80px;
+}
