@@ -1,35 +1,46 @@
-.colorful {
-    color: blue;
-    font-weight: bold;
-}
-
-h1.title {
-    color: black;
-    font-size: 3rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+html {
+    --logo-color: #F6F5EF;
 }
 
 .topNav {
-    background-color: lightgray;
+    background-color: var(--logo-color);
     width: 100vmax;
-    height: 50px;
-    display: inline-block;
-}
+    height: 65px;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;
 
-div a {
-    color: black;
-    height: auto;
-    width: auto;
-    font-size: 15px;
-}
-div a:hover {
-    color: blue;
-    font-size: 20px;
 }
 
 div button {
-    color: blue;
+    color: black;
     font-size: 15px;
-    height: 50px;
     width: 80px;
+    height: 65px;
+    top: -50px;
+    background-color: white;
+    border-radius: 15px;
+    border-color: var(--logo-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div button:hover {
+    background-color: lightgray;
+    color: smoke;
+    width: 90px;
+}
+
+.logo {
+    height: 65px;
+    width: auto;
+}
+
+.bareBones {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.title {
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    font-size: 3rem;
 }
