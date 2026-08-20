@@ -1,8 +1,3 @@
-const homeButton = document.getElementById("linkToHome");
-homeButton.addEventListener("click", function() {
-    window.location.href = "index.html";
-});
-
 function navBar() {
     const homeButton = document.getElementById("homeButton");
     homeButton.addEventListener("click", function() {
