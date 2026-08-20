@@ -1,8 +1,3 @@
-const button = document.getElementById("helloButton");
-button.addEventListener("click", function() {
-    alert("This was made using JavaScript!");
-});
-
 function navBar() {
     const homeButton = document.getElementById("homeButton");
     homeButton.addEventListener("click", function() {
