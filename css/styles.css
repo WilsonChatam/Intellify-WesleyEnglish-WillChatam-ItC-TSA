@@ -1,3 +1,5 @@
+/* Basic styles for every page */
+
 html {
     --logo-color: #F6F5EF;
     --logo-font: 'Nunito Sans', sans-serif;
@@ -8,20 +10,7 @@ body {
     background-color: var(--logo-color);
 }
 
-.mainContent {
-    text-align: center;
-    margin-top: 50px;
-    background-color: var(--logo-color);
-    color: black;
-    padding: 20px;
-    height: auto;
-    width: 100vw;
-    border-radius: 50px;
-    border-color: lightgrey;
-    border-width: 3px;
-    border-style: solid;
-
-}
+/* Navigation bar styles */
 
 .topNav {
     background-color: var(--logo-color);
@@ -63,3 +52,23 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* index.html styles */
+
+.mainContent {
+    text-align: center;
+    margin-top: 50px;
+    background-color: var(--logo-color);
+    color: black;
+    padding: 20px;
+    height: auto;
+    width: 100vw;
+    border-radius: 50px;
+    border-color: lightgrey;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+
+/* courses.html styles */
