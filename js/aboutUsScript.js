@@ -1,9 +1,10 @@
+// Navigation bars
 const aboutUsButton = document.getElementById("aboutUsButton");
 aboutUsButton.addEventListener("click", function() {
-    window.location.href = "aboutUs.html";
+    window.location.href = "../htmlCode/aboutUs.html";
 });
 
 const coursesButton = document.getElementById("coursesButton");
 coursesButton.addEventListener("click", function() {
-window.location.href = "courses.html";
+window.location.href = "../htmlCode/courses/courses.html";
 });

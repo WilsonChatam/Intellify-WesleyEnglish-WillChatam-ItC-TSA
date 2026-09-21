@@ -6,5 +6,5 @@ aboutUsButton.addEventListener("click", function() {
 
 const coursesButton = document.getElementById("coursesButton");
 coursesButton.addEventListener("click", function() {
-    window.location.href = "courses.html";
+    window.location.href = "../htmlCode/courses/courses.html";
 });
