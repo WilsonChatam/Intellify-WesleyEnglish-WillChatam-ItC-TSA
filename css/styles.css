@@ -5,12 +5,11 @@ html {
     --learndeep-logo-color: #040053;
     --learndeep-font: 'JetBrains Mono', monospace;
     --learndeep-big-font: 'SauceCodePro NF', Consolas, 'Courier New', monospace;
-    /* Using the variables */
-    font-family: var(--learndeep-font);
 }
 
 body {
     background-color: var(--learndeep-logo-color);
+    font-family: var(--learndeep-font);
 }
 
 /* Navigation bar styles */
@@ -74,3 +73,8 @@ body {
 
 /* courses.html styles */
 
+.achievement {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
