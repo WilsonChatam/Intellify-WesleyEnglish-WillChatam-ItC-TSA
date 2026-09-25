@@ -67,3 +67,15 @@ dropDownProgrammingButton.addEventListener("click", function() {
         isOpenedP = false;
     }
 });
+
+// Achievement code
+
+const achievementButton = document.getElementById("achievementButton");
+const achievement = document.getElementById("achievement");
+
+achievement.style.display = "none";
+
+
+achievementButton.addEventListener("click", function() {
+    achievement.style.display = "inline";
+});
