@@ -78,3 +78,26 @@ body {
     color: white;
     border-radius: 10px;
 }
+
+/* textCourseOne.html styles */
+
+.sectionHeader {
+    background-color: black;
+    color: white;
+    width: 325px;
+    border-radius: 5px;
+    display: grid;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 45px;
+}
+
+.youWillLearn {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    height: 200px;
+    display: grid;
+    padding-left: 20px;
+    padding-right: 20px;
+}
