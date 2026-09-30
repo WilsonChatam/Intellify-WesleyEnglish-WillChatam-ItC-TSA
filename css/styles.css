@@ -12,6 +12,11 @@ body {
     font-family: var(--learndeep-font);
 }
 
+div {
+    background-color: black;
+    color: white;
+}
+
 /* Navigation bar styles */
 
 .topNav {
@@ -92,7 +97,7 @@ body {
     font-size: 45px;
 }
 
-.youWillLearn {
+div.youWillLearn {
     background-color: black;
     color: white;
     border-radius: 10px;
