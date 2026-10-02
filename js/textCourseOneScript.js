@@ -51,3 +51,63 @@ tQ1D.addEventListener("click", function() {
         isQ1Answered = true;
     }
 });
+
+// Question 2
+
+let isQ2Answered = false;
+const tResponseQ2 = document.getElementById("tResponseQ2");
+const tQ2A = document.getElementById("tQ2A");
+const tQ2B = document.getElementById("tQ2B");
+const tQ2C = document.getElementById("tQ2C");
+const tQ2D = document.getElementById("tQ2D"); // Correct answer
+
+tQ2A.addEventListener("click", function () {
+    if (isQ2Answered == false) {
+        tResponseQ2.innerHTML = "I'm sorry, that's incorrect.";
+        isQ2Answered = true;
+    }
+});
+
+tQ2B.addEventListener("click", function() {
+    if (isQ2Answered == false) {
+        tResponseQ2.innerHTML = "I'm sorry, that's incorrect.";
+        isQ2Answered = true;
+    }
+});
+
+tQ2C.addEventListener("click", function() {
+    if (isQ2Answered == false) {
+        tResponseQ2.innerHTML = "I'm sorry, that's incorrect.";
+        isQ2Answered = true;
+    }
+});
+
+tQ2D.addEventListener("click", function() {
+    if (isQ2Answered == false) {
+        tResponseQ2.innerHTML = "You got this question right!";
+        isQ2Answered = true;
+        questionsGottenRight += 1;
+    }
+})
+
+// Question 3
+
+let isQ3Answered = false;
+const tResponseQ3 = document.getElementById("tResponseQ3");
+const tQ3A = document.getElementById("tQ3A"); // Correct answer
+const tQ3B = document.getElementById("tQ3B");
+
+tQ3A.addEventListener("click", function() {
+    if (isQ3Answered == false) {
+        tResponseQ3.innerHTML = "You got this question right!";
+        isQ3Answered = true;
+        questionsGottenRight += 1;
+    }
+});
+
+tQ3B.addEventListener("click", function() {
+    if (isQ3Answered == false) {
+        tResponseQ3.innerHTML = "I'm sorry, that's incorrect.";
+        isQ3Answered = true;
+    }
+})

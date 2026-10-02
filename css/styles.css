@@ -21,7 +21,6 @@ div {
     padding-left: 20px;
     padding-right: 20px;
 }
-
 /* Navigation bar styles */
 
 .topNav {
@@ -82,6 +81,11 @@ div {
 }
 
 /* courses.html styles */
+
+div.dropDown {
+    width: auto;
+    height: auto;
+}
 
 .achievement {
     background-color: black;
