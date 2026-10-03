@@ -13,6 +13,15 @@ coursesButton.addEventListener("click", function() {
 // Quiz
 
 let questionsGottenRight = 0;
+const tQuizConclusion = document.getElementById("tQuizConclusion");
+const tTryAgain = document.getElementById("tTryAgain");
+tTryAgain.style.display = "none"; 
+function checkQuizCompletion() {
+    if (isQ1Answered === true && isQ2Answered === true && isQ3Answered === true) {
+        tQuizConclusion.innerHTML = `You got ${questionsGottenRight} out of 3 questions right.`;
+        tTryAgain.style.display = "inline";
+    }
+}
 
 // Question 1
 
@@ -27,6 +36,7 @@ tQ1A.addEventListener("click", function() {
     if (isQ1Answered == false) {
         tResponseQ1.innerHTML = "I'm sorry, that's incorrect.";
         isQ1Answered = true;
+        checkQuizCompletion();
     }
 });
 
@@ -35,6 +45,7 @@ tQ1B.addEventListener("click", function() {
         tResponseQ1.innerHTML = "You got this question right!";
         isQ1Answered = true;
         questionsGottenRight += 1;
+        checkQuizCompletion();
     }
 });
 
@@ -42,6 +53,7 @@ tQ1C.addEventListener("click", function() {
     if (isQ1Answered == false) {
         tResponseQ1.innerHTML = "I'm sorry, that's incorrect.";
         isQ1Answered = true;
+        checkQuizCompletion();
     }
 });
 
@@ -49,6 +61,7 @@ tQ1D.addEventListener("click", function() {
     if (isQ1Answered == false) {
         tResponseQ1.innerHTML = "I'm sorry, that's incorrect.";
         isQ1Answered = true;
+        checkQuizCompletion();
     }
 });
 
@@ -65,6 +78,7 @@ tQ2A.addEventListener("click", function () {
     if (isQ2Answered == false) {
         tResponseQ2.innerHTML = "I'm sorry, that's incorrect.";
         isQ2Answered = true;
+        checkQuizCompletion();
     }
 });
 
@@ -72,6 +86,7 @@ tQ2B.addEventListener("click", function() {
     if (isQ2Answered == false) {
         tResponseQ2.innerHTML = "I'm sorry, that's incorrect.";
         isQ2Answered = true;
+        checkQuizCompletion();
     }
 });
 
@@ -79,6 +94,7 @@ tQ2C.addEventListener("click", function() {
     if (isQ2Answered == false) {
         tResponseQ2.innerHTML = "I'm sorry, that's incorrect.";
         isQ2Answered = true;
+        checkQuizCompletion();
     }
 });
 
@@ -87,6 +103,7 @@ tQ2D.addEventListener("click", function() {
         tResponseQ2.innerHTML = "You got this question right!";
         isQ2Answered = true;
         questionsGottenRight += 1;
+        checkQuizCompletion();
     }
 })
 
@@ -102,6 +119,7 @@ tQ3A.addEventListener("click", function() {
         tResponseQ3.innerHTML = "You got this question right!";
         isQ3Answered = true;
         questionsGottenRight += 1;
+        checkQuizCompletion();
     }
 });
 
@@ -109,5 +127,17 @@ tQ3B.addEventListener("click", function() {
     if (isQ3Answered == false) {
         tResponseQ3.innerHTML = "I'm sorry, that's incorrect.";
         isQ3Answered = true;
+        checkQuizCompletion();
     }
-})
+});
+
+tTryAgain.addEventListener("click", function() {
+    questionsGottenRight = 0;
+    isQ1Answered = false;
+    isQ2Answered = false;
+    isQ3Answered = false;
+    tResponseQ1.innerHTML = "";
+    tResponseQ2.innerHTML = "";
+    tResponseQ3.innerHTML = "";
+    tQuizConclusion.innerHTML = "";
+});
