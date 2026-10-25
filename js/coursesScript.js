@@ -20,12 +20,14 @@ const lessonOneT = document.getElementById("dDT1");
 const lessonTwoT = document.getElementById("dDT2");
 const breakOneT = document.getElementById("break1T");
 const breakTwoT = document.getElementById("break2T");
+const text1Completion = document.getElementById("text1Completion");
 
 function willShowT(statusT) {
     lessonOneT.style.display = statusT;
     lessonTwoT.style.display = statusT;
     breakOneT.style.display = statusT;
     breakTwoT.style.display = statusT;
+    text1Completion.style.display = statusT;
 }
 
 willShowT("none");

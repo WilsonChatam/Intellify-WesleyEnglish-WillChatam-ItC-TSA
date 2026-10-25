@@ -13,6 +13,7 @@ coursesButton.addEventListener("click", function() {
 // Quiz
 
 let questionsGottenRight = 0;
+let isCompleted = false;
 const tQuizConclusion = document.getElementById("tQuizConclusion");
 const tTryAgain = document.getElementById("tTryAgain");
 tTryAgain.style.display = "none"; 
@@ -20,6 +21,7 @@ function checkQuizCompletion() {
     if (isQ1Answered === true && isQ2Answered === true && isQ3Answered === true) {
         tQuizConclusion.innerHTML = `You got ${questionsGottenRight} out of 3 questions right.`;
         tTryAgain.style.display = "inline";
+        isCompleted = true;
     }
 }
 
@@ -141,3 +143,12 @@ tTryAgain.addEventListener("click", function() {
     tResponseQ3.innerHTML = "";
     tQuizConclusion.innerHTML = "";
 });
+
+// Completion statement in courses.html
+
+const text1Completion = document.getElementById("text1Completion");
+if (isCompleted == true) {
+    text1Completion.innerHTML = "You have completed this course.";
+} else {
+    text1Completion.innerHTML = "";
+}
